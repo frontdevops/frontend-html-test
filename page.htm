@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Верстка страницы</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/page.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="s/ie8.css" type="text/css" media="all">
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="content">
+		<header class="clearfix">
+			<nav>
+				<ul>
+					<li class="menu__item-1"><a href="#">Личный кабинет</a></li>
+					<li class="menu__item-2"><a href="#">Раздел 1</a></li>
+					<li class="menu__item-3"><a href="#">Раздел 2</a></li>
+					<li class="menu__item-4"><a href="#">Раздел 3</a></li>
+					<li class="menu__item-5"><a href="#">Раздел 4</a></li>
+					<li class="menu__item-6"><a href="#">Раздел 5</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<aside>
+			<p class="aside__paragraph">&#9728; TutuRu &mdash; крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</p>
+			<p class="aside__paragraph">Наша цель проста &mdash; делать наших клиентов счастливыми, а их путешествия незабываемыми. Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц. А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собственному контакт-центру.</p>
+		</aside>
+		
+		<main>
+			<div class="main-top clearfix">
+				<h1>Заполните форму</h1>
+				<ul>
+					<li class="main-top__step-1 done"><span>1</span></li>
+					<li class="main-top__step-2 done"><span>2</span></li>
+					<li class="main-top__step-3 current"><span>3</span></li>
+					<li class="main-top__step-4"><span>4</span></li>
+					<li class="main-top__step-5"><span>5</span></li>
+				</ul>
+			</div>
+			<form class="main-form" action="#" method="post">
+				<fieldset>
+					<legend><span>Общая информация</span></legend>
+					<div class="main-form-block clearfix">
+						<div class="main-form-block__element-container">
+							<label for="surname">Фамилия</label>
+							<input type="text" id="surname" />
+						</div>
+						<div class="main-form-block__element-container">
+							<label for="name">Имя</label>
+							<input type="text" id="name" />
+						</div>
+						<div class="main-form-block__element-container">
+							<label for="patronymic">Отчество</label>
+							<input type="text" id="patronymic" />
+						</div>
+					</div>
+					<div class="main-form-block clearfix">
+						<div class="main-form-block__element-container">
+							<label>Меняли фамилию?</label>
+							<div class="main-form-block__radio-container">
+								<input type="radio" id="surname-change-yes" name="surname-change">
+								<label for="surname-change-yes">Да</label>
+							</div>
+							<div class="main-form-block__radio-container">
+								<input type="radio" id="surname-change-no" name="surname-change" checked>
+								<label for="surname-change-no">Нет</label>
+							</div>
+						</div>
+						<div class="main-form-block__element-container">
+							<label>Пол</label>
+							<div class="main-form-block__radio-container">
+								<input type="radio" id="sex-change-male" name="sex-change" checked>
+								<label for="sex-change-male">Муж</label>
+							</div>
+							<div class="main-form-block__radio-container">
+								<input type="radio" id="sex-change-female" name="sex-change">
+								<label for="sex-change-female">Жен</label>
+							</div>
+						</div>
+						<div class="main-form-block__element-container">
+							<label for="relationship">Семейное положение</label>
+							<select id="relationship">
+								<option>Женат / Замужем</option>
+								<option>Не женат / Не замужем</option>
+							</select>
+						</div>
+					</div>
+					<div class="main-form-block clearfix">
+						<div class="main-form-block__element-container">
+							<label for="citizenship">Гражданство</label>
+							<select id="citizenship">
+								<option>Российская Федерация</option>
+								<option>Украина</option>
+							</select>
+						</div>
+						<div class="main-form-block__element-container">
+							<label for="birth-day">Дата рождения</label>
+							<select id="birth-day">
+								<option value="1">01</option>
+								<option value="2">02</option>
+							</select>
+							<select id="birth-month">
+								<option value="1">января</option>
+								<option value="2">февраля</option>
+							</select>
+							<select id="birth-year">
+								<option value="1">1970</option>
+								<option value="2">1971</option>
+							</select>
+						</div>
+					</div>
+					<div class="main-form-block clearfix">
+						<div class="main-form-block__element-container long">
+							<label for="birth-place">Место рождения</label>
+							<input type="text" id="birth-place" />
+							<small>Например, Россия, Комсомольск-на-Амуре</small>
+						</div>
+					</div>
+					<div class="main-form-block clearfix">
+						<div class="main-form-block__submit-container clearfix">
+							<button type="button" class="submit-button back"><span>&larr; Назад</span></button>
+							<button type="submit" class="submit-button"><span>Далее &rarr;</span></button>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</main>
+	</div>
+	
+	
+	<!--[if lt IE 9]>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+</body>
+</html>
