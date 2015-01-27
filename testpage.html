@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>tutu.ru HTML-developer testpage</title>
+    <!--[if lte IE 9]>
+        <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+        <link rel="stylesheet" href="css/progress-polyfill.css"/>
+        <link rel="stylesheet" href="css/ie.css"/>
+    <![endif]-->
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css"/>
+    <link rel="stylesheet" href="css/testpage.css">
+</head>
+<body>
+<section class="wrapper">
+    <main>
+        <nav class="top-navigation">
+            <a class="top-navigation_nav-link private" href="#">Личный кабинет</a>
+            <a class="top-navigation_nav-link section-1" href="#">Раздел 1</a>
+            <a class="top-navigation_nav-link section-2" href="#">Раздел 2</a>
+            <a class="top-navigation_nav-link section-3" href="#">Раздел 3</a>
+            <a class="top-navigation_nav-link section-4" href="#">Раздел 4</a>
+            <a class="top-navigation_nav-link section-5" href="#">Раздел 5</a>
+        </nav>
+        <div class="form_header">
+            <h1 class="form_header-text">Заполните форму</h1>
+            <ul class="form_header-form_indicator">
+                <li class="form_indicator-item">1</li>
+                <li class="form_indicator-item">2</li>
+                <li class="form_indicator-item current-item">3</li>
+                <li class="form_indicator-item">4</li>
+                <li class="form_indicator-item">5</li>
+            </ul>
+        </div>
+        <form action="#" method="get">
+            <span class="common_info">
+                <span class="common_info-text">Общая информация</span>
+                <span class="common_info-border"></span>
+            </span>
+            <div class="form_item">
+                <label for="surname">Фамилия</label>
+                <input id="surname" name="SURNAME" type="text" tabindex="1"/>
+            </div>
+            <div class="form_item">
+                <label for="name">Имя</label>
+                <input id="name" name="NAME" type="text" tabindex="2"/>
+            </div>
+            <div class="form_item input-md">
+                <label for="patronymic">Отчество</label>
+                <input id="patronymic" name="PATRONYMIC" type="text" tabindex="3"/>
+            </div>
+            <div class="form_item">
+                <span>Меняли фамилию?</span>
+                <input type="radio" id="change_surname_yes" name="CHANGE_SURNAME" value="true" tabindex="4"/>
+                <label class="choose" for="change_surname_yes">Да</label>
+                <input type="radio" id="change_surname_no" name="CHANGE_SURNAME" value="false" tabindex="5"/>
+                <label class="choose" for="change_surname_no">Нет</label>
+            </div>
+            <div class="form_item sex_item">
+                <span>Пол</span>
+                <input type="radio" id="sex_m" name="SEX" value="M" tabindex="6"/>
+                <label class="choose" for="sex_m" >МУЖ</label>
+                <input type="radio" id="sex_f" name="SEX" value="F" tabindex="7"/>
+                <label class="choose" for="sex_f">ЖЕН</label>
+            </div>
+            <div class="form_item">
+                <label>
+                    <span>Семейное положение</span>
+                    <select name="MARTIAL_STATUS" tabindex="7">
+                        <option value="1">Женат/Замужем</option>
+                        <option value="2">Женат/Замужем</option>
+                        <option value="3">Женат/Замужем</option>
+                        <option value="4">Женат/Замужем</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form_item">
+                <label>
+                    <span>Гражданство</span>
+                    <select name="CITIZENSHIP" tabindex="8">
+                        <option value="1">Российская Федерация</option>
+                        <option value="2">Российская Федерация</option>
+                        <option value="3">Российская Федерация</option>
+                        <option value="4">Российская Федерация</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form_item">
+                <label for="DAY_OF_BIRTH">Дата рождения</label>
+                <div class="dob_select">
+                    <select name="day_of_bitrh" id="DAY_OF_BIRTH" tabindex="9">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <select name="month_of_birth" tabindex="10">
+                        <option value="1">январь</option>
+                        <option value="2">февраль</option>
+                        <option value="3">март</option>
+                        <option value="4">апрель</option>
+                    </select>
+                    <select name="year_of_birth" tabindex="11">
+                        <option value="1970">1970</option>
+                        <option value="1971">1971</option>
+                        <option value="1972">1972</option>
+                        <option value="1973">1973</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form_item big-item sz-fx">
+                <label for="place_of_birth">Место рождения</label>
+                <input id="place_of_birth" type="text" name="PLACE_OF_BIRTH" tabindex="12"/>
+                <span class="place_of_birth-example">Например, Россия, Комсомольск-на-амуре</span>
+            </div>
+            <div class="form_item form_footer">
+                <button class="form_footer-btn back-btn" type="button" onclick="history.back()" tabindex="13">
+                    <span class="btn-arrow-back"></span>
+                    <span class="form_footer-btn-text">Назад</span>
+                </button>
+                <button class="form_footer-btn fwd-btn" type="submit" tabindex="14">
+                    <span class="form_footer-btn-text">Далее</span>
+                    <span class="btn-arrow-fwd"></span>
+                </button>
+            </div>
+        </form>
+    </main>
+    <aside>
+        <p class="side-text">
+            ☀TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.
+        </p>
+        <p class="side-text">
+            Наша цель проста - делать наших клиентов счастливыми, а их путешествия незабываемыми.
+            Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц. А мы делаем это качественно,
+            обеспечивая самую лучшую поддержку благодаря собственному контакт-центру.
+        </p>
+    </aside>
+</section>
+<!--[if lte IE 9]>
+    <script src="js/progress-polyfill.js"></script>
+<![endif]-->
+</body>
+</html>
