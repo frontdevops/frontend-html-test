@@ -1,0 +1,328 @@
+body {
+  margin: 0;
+  font: @default-font;
+}
+
+.wrapper {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+@default-font: normal 13px Arial, Tahoma, sans-serif;
+
+main {
+  float: right;
+  width: 784px;
+  .top-navigation {
+    margin: 50px 0 42px;
+    max-width: 646px;
+    border-radius: 13px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+    padding: 0 4px 2px 36px;
+    .top-navigation_nav-link {
+      font-size: 15px;
+      display: inline-block;
+      padding: 1.6em 0.8em;
+      &.private {
+        color: #6b00b4;
+      }
+      &.section-1 {
+        color: #14731b;
+      }
+      &.section-2 {
+        color: #0e73d9;
+      }
+      &.section-3 {
+        color: #ee6e00;
+      }
+      &.section-4 {
+        color: #5a335a;
+      }
+      &.section-5 {
+        color: #ffb766;
+      }
+    }
+  }
+  .form_header {
+    min-height: 50px;
+    text-align: center;
+    .form_header-text {
+      font-size: 22px;
+      margin: 15px 0;
+      float: left;
+    }
+    &-form_indicator {
+      font-size: 0;
+      float: right;
+      margin: -34px 96px 0 0;
+      .form_indicator-item {
+        border-radius: 2px;
+        display: inline-block;
+        list-style: none;
+        font-size: 9px;
+        font-style: italic;
+        padding: 2px 43px;
+        margin: 0 1px;
+        background: #3bad19;
+        color: #fff;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25) inset;
+      }
+      .current-item {
+        background: #a4d807;
+        & ~ li {
+          background: #f6f6f6;
+          color: #000;
+        }
+      }
+    }
+  }
+  form {
+    margin-top: 5px;
+    .form_item {
+      margin-bottom: 15px;
+      float: left;
+      width: 225px;
+      height: 60px;
+      input[type="text"] {
+        width: 179px;
+        height: 17px;
+        margin-top: 8px;
+      }
+      label, span {
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+      }
+      &.input-md input {
+        width: 224px;
+      }
+      &.big-item {
+        display: block;
+        width: 100%;
+        input {
+          width: 673px;
+          margin-top: 6px;
+        }
+        .place_of_birth-example {
+          color: #666681;
+          font-weight: normal;
+          font-size: 11px;
+          margin-top: 6px;
+        }
+      }
+      &.form_footer {
+        width: 687px;
+        height: 65px;
+        background: #f2f2f2;
+        margin-top: 3px;
+         .form_footer-btn {
+           position: relative;
+           display: inline-block;
+           width: 127px;
+           height: 33px;
+           border-radius: 17px;
+           color: #fff;
+           border: none;
+           margin: 16px 8px 0 10px;
+            .btn-arrow {
+              display: inline-block;
+              width: 20px;
+              height: 10px;
+                &-back {
+                  width: 20px;
+                  height: 10px;
+                  background: url("../img/btn-arrow-back.png") no-repeat scroll;
+                  display: inline-block;
+                  margin: 5px 0 0;
+                }
+                &-fwd {
+                  width: 20px;
+                  height: 10px;
+                  background: url("../img/btn-arrow-fwd.png") no-repeat scroll;
+                  display: inline-block;
+                }
+            }
+            &-text {
+              width: 44px;
+              display: inline-block;
+              margin: 0 5px 0 0;
+              font-size: 14px;
+            }
+         }
+         .back-btn {
+           float: left;
+           background: -webkit-linear-gradient(#e3e3e3, #7e7e7e);
+           background:    -moz-linear-gradient(#e3e3e3, #7e7e7e);
+           background:     -ms-linear-gradient(#e3e3e3, #7e7e7e);
+           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3e3e3', endColorstr='#7e7e7e', GradientType=0);
+         }
+          .fwd-btn {
+            float: right;
+            background: -webkit-linear-gradient(#d4ee84, #7da703);
+            background:    -moz-linear-gradient(#d4ee84, #7da703);
+            background:     -ms-linear-gradient(#d4ee84, #7da703);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d4ee84', endColorstr='#7da703', GradientType=0);
+          }
+      }
+      select[name="MARTIAL_STATUS"],
+      select[name="CITIZENSHIP"], {
+        font-weight: normal;
+        width: 224px;
+        height: 20px;
+        border-radius: 0;
+        margin-top: 8px;
+        padding: 0 0 0 4px;
+        font-size: 13px;
+      }
+      select[name="CITIZENSHIP"] {
+        width: 179px;
+        font-size: 12px;
+      }
+      .dob_select {
+        margin-top: 8px;
+          select {
+            border-radius: 0;
+            font-size: 12px;
+              &:first-child {
+                width: 58px;
+                margin-right: 4px;
+              }
+              &:nth-child(2) {
+                width: 81px;
+                margin-right: 4px;
+              }
+              &:last-child {
+                width: 55px;
+              }
+          }
+      }
+      .choose {
+        display: inline-block;
+        color: #000;
+        font-weight: normal;
+        border-bottom:1px dotted #000;
+        margin: 12px 4px 4px;
+      }
+      input[type="radio"]:checked+label.choose{
+        color: #fff;
+        background: #8cb903;
+        border-radius: 4px;
+        padding: 4px;
+        text-decoration: none;
+        box-sizing: border-box;
+        border: none;
+        margin: 8px 0 0;
+      }
+      input[type="radio"] {
+        position: absolute;
+        left: -9999px;
+      }
+    }
+    .common_info {
+      display: block;
+      margin-bottom: 23px;
+      margin-top: 26px;
+      &-text {
+        font-style: italic;
+        color: #666681;
+        display: inline-block;
+        padding-right: 7px;
+      }
+      &-border {
+        display: inline-block;
+        height: 3px;
+        border-top: 1px solid #cacaca;
+        width: 553px;
+      }
+    }
+  }
+}
+
+aside {
+  float: left;
+  width: 225px;
+  margin-top: 157px;
+  margin-left: -2px;
+  line-height: 18px;
+  font-size: 14px;
+    .side-text {
+      margin-bottom: 44px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 100%;
+  }
+  aside {
+    //float: none;
+    margin: 5% auto;
+    clear: both;
+    width: 95%;
+  }
+
+  main {
+    float: none;
+    width: 100%;
+    margin: auto;
+  }
+  main form {
+    width: 100%;
+  }
+  main form .form_item {
+    width: 95%;
+    float: none;
+    margin: 0 auto;
+  }
+  main form .form_item.big-item.sz-fx {
+    float: none;
+    margin: 0 auto;
+    width: 95%;
+  }
+  main form .form_item input[type="text"] {
+    width: 100%;
+  }
+  main form .form_item.big-item input {
+    width: 100%;
+  }
+  main .top-navigation {
+    max-width: 9999px;
+  }
+  main .top-navigation .top-navigation_nav-link {
+    display: block;
+    text-align: center;
+  }
+  main form .form_item.form_footer {
+    width: 100%;
+    height: 114px;
+  }
+  main form .common_info-border {
+    width: 10%;
+  }
+  main form .form_item select[name="CITIZENSHIP"],
+  main form .form_item select[name="MARTIAL_STATUS"] {
+    width: 100%;
+  }
+  main .form_header-form_indicator .form_indicator-item {
+    padding: 2px 17px;
+  }
+  main .form_header-form_indicator {
+    margin: 0 0 0 -41px;
+  }
+  main .form_header .form_header-text,
+  main .form_header .form_header-form_indicator{
+    float: none;
+  }
+  main form .common_info {
+    margin: 26px auto 23px;
+  }
+}
+
+
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  main {
+    //width: 100%;
+  }
+}
+

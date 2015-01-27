@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>tutu.ru HTML-developer test tasks</title>
+    <!--[if lte IE 9]>
+        <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+        <link rel="stylesheet" href="css/progress-polyfill.css"/>
+    <![endif]-->
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css"/>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <section class="wrapper">
+            <h1 class="header-text">Test job for candidates for the position HTML-developer</h1>
+        </section>
+    </header>
+    <main class="tasks wrapper">
+        <section class="task_rating" id="rating">
+            <h1>1. Компонент оценки и показа рейтинга</h1>
+            <span>Не до конца то что требовалось в задании, я постарался максимально приблизиться к решению, при котором установка рейтинга будет производиться одним классом</span>
+            <ul class="task_rating_stars">
+                <li class="task_rating_stars-star"></li>
+                <li class="task_rating_stars-star"></li>
+                <li class="task_rating_stars-star active-mark"></li>
+                <li class="task_rating_stars-star"></li>
+                <li class="task_rating_stars-star"></li>
+            </ul>
+        </section>
+        <section class="task_progressbar" id="progress_bar">
+            <h1>2. Прогресс-бар</h1>
+            <progress class="task_progressbar-progressbar" max="100" value="20"></progress>
+        </section>
+        <section class="task_button" id="button">
+            <h1>3. Кнопка</h1>
+            <ul class="task_button_list">
+                <li class="task_button_list-item">
+                    <span class="task_button_list-item-describe">input:</span>
+                    <input type="button" class="task_button-example big" value="Кнопка"/>
+                    <input type="button" class="task_button-example normal" value="Кнопка"/>
+                    <input type="button" class="task_button-example small" value="Кнопка"/>
+                </li>
+                <li class="task_button_list-item">
+                    <span class="task_button_list-item-describe">a:</span>
+                    <a href="#" class="task_button-example big">Кнопка</a>
+                    <a href="#" class="task_button-example normal">Кнопка</a>
+                    <a href="#" class="task_button-example small">Кнопка</a>
+                </li>
+                <li class="task_button_list-item">
+                    <span class="task_button_list-item-describe">div:</span>
+                    <div class="task_button-example big">Кнопка</div>
+                    <div class="task_button-example normal">Кнопка</div>
+                    <div class="task_button-example small">Кнопка</div>
+                </li>
+                <li class="task_button-example-item">
+                    <span class="task_button_list-item-describe">button:</span>
+                    <button class="task_button-example big">Кнопка</button>
+                    <button class="task_button-example normal">Кнопка</button>
+                    <button class="task_button-example small">Кнопка</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <ul class="contacts wrapper">
+            <li class="contacts_copyright">
+                by Шакун Александр
+            </li>
+            <li class="contacts_facebook">
+                <a href="https://www.facebook.com/alexandr.shakun">Facebook</a>
+            </li>
+            <li class="contacts_linkedin">
+                <a href="https://www.linkedin.com/profile/view?id=187811972">LinkedIn</a>
+            </li>
+            <li class="contacts_github">
+                <a href="https://github.com/sashashakun">Github</a>
+            </li>
+        </ul>
+    </footer>
+    <!--[if lte IE 9]>
+        <script src="js/progress-polyfill.js"></script>
+    <![endif]-->
+</body>
+</html>
