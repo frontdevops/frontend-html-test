@@ -1,0 +1,259 @@
+html, body{
+	margin: 100px;
+}
+strong{
+	font-weight: bold;
+}
+
+.component-container{
+	margin-bottom: 100px;
+}
+.group{
+	margin: 20px 20px 40px;
+}
+
+/*Rating component*/
+.rating-component__stars{
+	height: 20px;
+	width: 105px;
+	background: url(../images/stars.png) repeat-x;
+	font-size: 0;
+	cursor: pointer;
+	padding: 0;
+}
+.rating-component__stars:hover li.current{
+	background: none;
+}
+.rating-component__stars li{
+	height: 100%;
+	width: 11px;
+	display: inline-block;
+	background-position: left bottom !important;
+}
+.rating-component__stars li.rating-component__star-even{
+	width: 10px;
+	background-position: right bottom !important;
+}
+.rating-component__stars li.current, .rating-component__stars li.hover, .rating-component__stars:hover li.current.hover{
+	background-image: url(../images/stars.png);
+}
+
+/*Progressbar component*/
+.progress-component{
+	width: 280px;
+	position: relative;
+}
+.progress-component progress, .progress-component progress[role]{
+	background-color: #f3f3f3;
+	background-size: auto;
+	border: 0;
+	width: 100%;
+	height: 16px;  
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: inset 0px 2px 3px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow: inset 0px 2px 3px 0px rgba(50, 50, 50, 0.5);
+	box-shadow: inset 0px 2px 3px 0px rgba(50, 50, 50, 0.5);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	color: #b4e391;
+}
+.progress-component progress[role]:after {
+	background-image: none;
+}
+.progress-component progress[aria-valuenow]:before {
+	background: #b4e391;
+}
+.progress-component progress::-webkit-progress-bar{
+	background: #b4e391;
+	background: -moz-linear-gradient(top,  #b4e391 0%, #61c419 50%, #b4e391 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4e391), color-stop(50%,#61c419), color-stop(100%,#b4e391));
+	background: -webkit-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
+	background: -o-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
+	background: -ms-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
+	background: linear-gradient(to bottom,  #b4e391 0%,#61c419 50%,#b4e391 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 );
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.progress-component progress::-moz-progress-bar{
+	background: #b4e391;
+	background: -moz-linear-gradient(top,  #b4e391 0%, #61c419 50%, #b4e391 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4e391), color-stop(50%,#61c419), color-stop(100%,#b4e391));
+	background: -webkit-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
+	background: -o-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
+	background: -ms-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
+	background: linear-gradient(to bottom,  #b4e391 0%,#61c419 50%,#b4e391 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 );
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.progress-component progress::-ms-fill{
+    border: none;
+}
+.progress-component__value{
+	position: absolute;
+	display: block;
+	text-align: center;
+	width: 100%;
+	top: 0;
+	font: bold 14px Arial, Helvetica, sans-serif;
+}
+
+/*Button component*/
+.button-component{
+	position: relative;
+	color: #000;
+	border: 0;
+	background: #f2f2f2;
+	background: -moz-linear-gradient(top,  #f2f2f2 0%, #f2f2f2 29%, #e3e3e3 71%, #e2e2e2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(29%,#f2f2f2), color-stop(71%,#e3e3e3), color-stop(100%,#e2e2e2));
+	background: -webkit-linear-gradient(top,  #f2f2f2 0%,#f2f2f2 29%,#e3e3e3 71%,#e2e2e2 100%);
+	background: -o-linear-gradient(top,  #f2f2f2 0%,#f2f2f2 29%,#e3e3e3 71%,#e2e2e2 100%);
+	background: -ms-linear-gradient(top,  #f2f2f2 0%,#f2f2f2 29%,#e3e3e3 71%,#e2e2e2 100%);
+	background: linear-gradient(to bottom,  #f2f2f2 0%,#f2f2f2 29%,#e3e3e3 71%,#e2e2e2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e2e2e2',GradientType=0 );
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	border-radius: 10px 10px 10px 10px;
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(168,168,168,1);
+	-moz-box-shadow: 0px 1px 1px 0px rgba(168,168,168,1);
+	box-shadow: 0px 1px 1px 0px rgba(168,168,168,1);
+	font: 11px Arial, Helvetica, sans-serif;
+	width: 70px;
+	height: 16px;
+	padding-top: 2px;
+	vertical-align: top;
+}
+.button-component:hover{
+	background: #e6e6e6;
+	background: -moz-linear-gradient(top,  #e6e6e6 0%, #e6e6e6 29%, #d8d8d8 71%, #d7d7d7 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e6e6e6), color-stop(29%,#e6e6e6), color-stop(71%,#d8d8d8), color-stop(100%,#d7d7d7));
+	background: -webkit-linear-gradient(top,  #e6e6e6 0%,#e6e6e6 29%,#d8d8d8 71%,#d7d7d7 100%);
+	background: -o-linear-gradient(top,  #e6e6e6 0%,#e6e6e6 29%,#d8d8d8 71%,#d7d7d7 100%);
+	background: -ms-linear-gradient(top,  #e6e6e6 0%,#e6e6e6 29%,#d8d8d8 71%,#d7d7d7 100%);
+	background: linear-gradient(to bottom,  #e6e6e6 0%,#e6e6e6 29%,#d8d8d8 71%,#d7d7d7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#d7d7d7',GradientType=0 );
+}
+.button-component:active{
+	background: #b7b5b5;
+	background: -moz-linear-gradient(top,  #b7b5b5 0%, #b7b5b5 29%, #aba9a9 71%, #aba9a9 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b7b5b5), color-stop(29%,#b7b5b5), color-stop(71%,#aba9a9), color-stop(100%,#aba9a9));
+	background: -webkit-linear-gradient(top,  #b7b5b5 0%,#b7b5b5 29%,#aba9a9 71%,#aba9a9 100%);
+	background: -o-linear-gradient(top,  #b7b5b5 0%,#b7b5b5 29%,#aba9a9 71%,#aba9a9 100%);
+	background: -ms-linear-gradient(top,  #b7b5b5 0%,#b7b5b5 29%,#aba9a9 71%,#aba9a9 100%);
+	background: linear-gradient(to bottom,  #b7b5b5 0%,#b7b5b5 29%,#aba9a9 71%,#aba9a9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7b5b5', endColorstr='#aba9a9',GradientType=0 );
+	color: #fff;
+	padding: 0;
+	padding-top: 2px;
+	border: 0;
+}
+.button-component span{
+	position: absolute;
+    top: 0;
+    left: 0;
+	width: 100%;
+	display: block;
+}
+
+/*Variants*/
+div.button-component, a.button-component{
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 0;
+	cursor: pointer;
+}
+div.button-component span, a.button-component span{
+	line-height: 23px;
+}
+div.button-component:active, a.button-component:active{
+	padding-top: 0;
+}
+
+.button-component.small{
+	font-size: 11px;
+	width: 70px;
+	height: 16px;
+}
+.button-component.small span{
+	height: 16px;
+	line-height: 17px;
+}
+.button-component.normal{
+	font-size: 13px;
+	width: 90px;
+	height: 22px;
+}
+.button-component.normal span{
+	height: 22px;
+	line-height: 23px;
+}
+.button-component.big{
+	font-size: 15px;
+	width: 110px;
+	height: 28px;
+}
+.button-component.big span{
+	height: 28px;
+	line-height: 29px;
+}
+.button-component.small.short{
+	width: 40px;
+}
+.button-component.normal.short{
+	width: 60px;
+}
+.button-component.big.short{
+	width: 80px;
+}
+.button-component.small.long{
+	width: 100px;
+}
+.button-component.normal.long{
+	width: 120px;
+}
+.button-component.big.long{
+	width: 140px;
+}
+
+.test-container{
+	vertical-align: top;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	padding: 20px;
+	display: inline-block;
+}
+.test-form{
+	margin-bottom: 60px;
+}
+.test-form textarea{
+	resize: none;
+	margin-bottom: 14px;
+}
+.test-form .form-inputs__input-container{
+	margin-bottom: 14px;
+}
+.test-form .form-inputs__button-container{
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background: #999;
+	padding: 14px;
+	display: inline-block;
+}
+.test-paragraph p{
+	line-height: 26px;
+	width: 300px;
+}
+.test-paragraph .button-component{
+	margin: 0 5px;
+}

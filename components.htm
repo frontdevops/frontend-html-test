@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Компоненты</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+	<link href="css/components.css" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	
+	<!--[if lt IE 9]>
+		<link href="css/progress-polyfill.css" rel="stylesheet">
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div class="component-container">
+	<h1>1. Компонент оценки</h1>
+	<div class="rating-component" data-rating="5">
+		<ul class="rating-component__stars">
+			<li></li>
+			<li class="rating-component__star-even"></li>
+			<li></li>
+			<li class="rating-component__star-even"></li>
+			<li></li>
+			<li class="rating-component__star-even"></li>
+			<li></li>
+			<li class="rating-component__star-even"></li>
+			<li></li>
+			<li class="rating-component__star-even"></li>
+		</ul>
+		<!--Обернул список блоком, так как кроме него в компоненте может присутствовать текст-->
+	</div>
+</div>
+
+<div class="component-container">
+	<h1>2. Прогресс-бар</h1>
+	<div class="progress-component">
+		<progress max="100" value="80"></progress>
+		<span class="progress-component__value">0%</span>
+	</div>
+</div>
+<div class="component-container">
+	<h1>3. Кнопка</h1>
+	<div class="group">
+		<h4>Виды</h4>
+		<div class="button-component normal"><span>DIV</span></div>
+		<a href="#" class="button-component normal"><span>A</span></a>
+		<button type="button" class="button-component normal"><span>BUTTON</span></button>
+		
+	</div>
+	<div class="group">
+		<h4>Размеры</h4>
+		<button type="button" class="button-component small"><span>Small</span></button>
+		<button type="button" class="button-component normal"><span>Normal</span></button>
+		<button type="button" class="button-component big"><span>Big</span></button>
+	</div>
+	<div class="group">
+		<h4>Длины</h4>
+		<button type="button" class="button-component small short"><span>Ок</span></button>
+		<button type="button" class="button-component normal short"><span>Отмена</span></button>
+		<button type="button" class="button-component big short"><span>Кнопка</span></button>
+		<br><br>
+		<button type="button" class="button-component small long"><span>Длинная кнопка</span></button>
+		<button type="button" class="button-component normal long"><span>Длинная кнопка</span></button>
+		<button type="button" class="button-component big long"><span>Длинная кнопка</span></button>
+	</div>
+	<div class="group">
+		<h4>Окружение</h4>
+		<div class="test-container test-form">
+			<h5>Форма</h5>
+			<form>
+				<div class="form-inputs">
+					<div class="form-inputs__input-container">
+						<input placeholder="Имя" />
+					</div>
+					<div class="form-inputs__input-container">
+						<input placeholder="Email" />
+					</div>
+					<textarea placeholder="Сообщение"></textarea>
+				</div>
+				<div class="form-inputs__button-container">
+					<button type="button" class="button-component normal short"><span>ОК</span></button>
+					<button type="button" class="button-component normal"><span>Очистить</span></button>
+				</div>
+			</form>
+		</div>
+		<div class="test-container test-paragraph">
+			<h5>Текст</h5>
+			<p>Дип-скай объект перечеркивает центральный восход, а время ожидания ответа составило бы 80 миллиардов лет. Исполинская звездная спираль с поперечником в 50 кпк традиционно выслеживает первоначальный ионный хвост. Угловая скорость вращения отражает астероидный натуральный логарифм.<button type="button" class="button-component normal long"><span>Читать далее...</span></button></p>
+			
+		</div>
+	</div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!--[if lt IE 9]>
+	<script>document.createElement('progress');</script>
+	<script src='js/progress-polyfill.min.js'></script>
+<![endif]-->
+<script src='js/all.js'></script>
+</body>
+</html>
